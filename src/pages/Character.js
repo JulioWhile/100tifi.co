@@ -16,7 +16,7 @@ const Character = async () => {
 	} = character;
 	const view = `
         <div class="characters-inner">
-            <article class="characters-card">
+            <article class="characters-card shadow">
                 <img src="${image}" alt="${name}" />
                 <h2>${name}</h2>
             </article>
