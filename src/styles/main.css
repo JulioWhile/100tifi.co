@@ -1,32 +1,140 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap');
 
-:root {
-	--background-ligth: #f4f4f4;
-	--background-dark: #2b4162;
-	--second-color-dark: #385f71;
-}
-
-:root {
-	--background-ligth: #f4f4f4;
-	--background-dark: #2b4162;
-	--second-color-dark: #385f71;
-}
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-/* @keyframes fade {
+body {
+	font-family: 'Open Sans', sans-serif, Arial, Helvetica;
+}
+
+/* Header */
+.header {
+	background-color: #4c5c68;
+	min-width: 100%;
+	padding: 15px;
+}
+
+.header__container {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+}
+
+.header--link {
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.header--link:hover {
+	text-decoration: underline;
+}
+/* Main content */
+.main {
+	margin: 0 auto;
+	max-width: 850px;
+}
+
+#main__content {
+	padding: 15px;
+	margin-top: 60px;
+}
+
+/* Main content characters from Home */
+.main__content--characters {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 1.5rem;
+}
+
+.characters--item {
+	box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06),
+		1px 3px 8px rgba(39, 44, 49, 0.03);
+	border-radius: 5px;
+	margin-bottom: 20px;
+	animation-name: fade;
+	animation-duration: 3000ms;
+}
+
+.characters--item a {
+	font-size: 12px;
+	font-weight: lighter;
+	text-decoration: none;
+	color: #4c5c68;
+}
+
+.characters--item a:hover {
+	text-decoration: underline;
+}
+
+.characters--item a img {
+	width: 100%;
+	height: auto;
+}
+
+/* Media for Home */
+@media (max-width: 768px) {
+	.main__content--characters {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (max-width: 425px) {
+	.main__content--characters {
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+/* Character selection */
+.characters-inner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation-name: fade;
+	animation-duration: 3000ms;
+}
+
+.characters-card {
+	margin-left: 45px;
+}
+
+.characters-card h2,
+h3 {
+	color: #46494c;
+}
+
+.characters-card small {
+	color: #1985a1;
+}
+
+@media (max-width: 768px) {
+	.characters-inner {
+		flex-direction: column;
+	}
+
+	.characters-card {
+		margin-left: 0;
+		margin-top: 45px;
+	}
+
+	#main__content {
+		margin-top: 30px;
+	}
+}
+
+/* Keyframes */
+@keyframes fade {
 	from {
 		opacity: 0;
 	}
 	to {
 		opacity: 1;
 	}
-} */
-/*
+}
+
 @keyframes spin {
 	0% {
 		transform: rotate(0deg);
@@ -34,4 +142,4 @@
 	100% {
 		transform: rotate(360deg);
 	}
-} */
+}

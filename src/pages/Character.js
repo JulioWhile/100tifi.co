@@ -21,12 +21,12 @@ const Character = async () => {
                 <h2>${name}</h2>
             </article>
             <article class="characters-card">
-                <h3>Episodes: <span>${episode.length}</span></h3>
-                <h3>Status: <span>${status}</span></h3>
-                <h3>Species: <span>${species}</span></h3>
-                <h3>Gender: <span>${gender}</span></h3>
-                <h3>Origin: <span>${origin.name}</span></h3>
-                <h3>Last Location: <span>${location.name}</span></h3>
+                <h3>Episodes: <small>${episode.length}</small></h3>
+                <h3>Status: <small>${status}</small></h3>
+                <h3>Species: <small>${species}</small></h3>
+                <h3>Gender: <small>${gender}</small></h3>
+                <h3>Origin: <small>${origin.name}</small></h3>
+                <h3>Last Location: <small>${location.name}</small></h3>
             </article>
         </div>
     `;

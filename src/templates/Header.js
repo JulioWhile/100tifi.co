@@ -1,17 +1,15 @@
 const Header = () => {
 	const view = `
-        <div class="header-main">
-            <div class="header-logo">
+        <div class="header__container">
+            <div class="header__container--logo">
                 <h1>
-                    <a href="/">
-                        <img src="https://i.imgur.com/7utDxm8.png"
-                             alt="Rick and Morty logo"
-                             height="50px" />
+                    <a href="/" class="header--link">
+                        100tifi.co
                     </a>
                 </h1>
             </div>
-            <div class="header-nav">
-                <a href="#/about/">
+            <div class="header__container--nav">
+                <a href="#/about/" class="header--link">
                     About
                 </a>
             </div>
